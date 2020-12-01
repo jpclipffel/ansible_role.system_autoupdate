@@ -1,0 +1,18 @@
+// THIS FILE IS GENERATED AND MAINTAINED BY ANSIBLE.
+// DO NOT DELETE, RENAME OR CHANGE THIS FILE.
+//
+// --- Ansible log ---
+// Generation role: {{ role_name }}
+// Generation date: {{ ansible_date_time.iso8601 }}
+// ---
+
+
+Unattended-Upgrade::Allowed-Origins {
+        "${distro_id}:${distro_codename}";
+        "${distro_id}:${distro_codename}-security";
+        "${distro_id}ESMApps:${distro_codename}-apps-security";
+        "${distro_id}ESM:${distro_codename}-infra-security";
+};
+
+
+Unattended-Upgrade::DevRelease "false";

@@ -1,0 +1,4 @@
+# code: language=Ansible insertSpaces=true tabSize=2
+
+system_autoupdate_unattended_upgrades_file: "/etc/apt/apt.conf.d/50unattended-upgrades"
+system_autoupdate_auto_upgrades_file: "/etc/apt/apt.conf.d/20unattended-upgrades"
