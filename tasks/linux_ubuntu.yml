@@ -7,23 +7,19 @@
     state: present
   tags: [never, setup]
 
-
 - name: Configure unattended-upgrades
   template:
     src: "templates/unattended-upgrades.j2"
     dest: "{{ system_autoupdate_unattended_upgrades_file }}"
   tags: [never, setup]
 
-
 - name: Configure auto-upgrades
   template:
-    src: "templates/unattended-upgrades.j2"
+    src: "templates/auto-upgrades.j2"
     dest: "{{ system_autoupdate_auto_upgrades_file }}"
   tags: [never, setup]
 
-
 # ---
-
 
 - name: Remove unattended-upgrades configuration
   file:
@@ -31,13 +27,11 @@
     state: absent
   tags: [never, teardown, remove]
 
-
 - name: Remove auto-upgrades configuration
   file:
     path: "{{ system_autoupdate_auto_upgrades_file }}"
     state: absent
   tags: [never, teardown, remove]
-
 
 - name: Install unattended-upgrades
   package:
