@@ -1,0 +1,7 @@
+# code: language=Ansible tabSize=2
+
+
+- name: Debug
+  debug:
+    msg: "Unsupported for CoreOS"
+  tags: [always]
