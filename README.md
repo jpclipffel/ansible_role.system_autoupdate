@@ -2,6 +2,12 @@
 
 Manage hosts auto update mechanisms.
 
+⚠️ **This role has been moved into the collection [jpclipffel.system](https://github.com/jpclipffel/ansible_collection.system):**
+* GitHub: https://github.com/jpclipffel/ansible_collection.system
+* Ansible Galaxy: https://galaxy.ansible.com/jpclipffel/system
+
+---
+
 The following operating systems are supported:
 
 | System  | Distribution | Version | Notes                      |
